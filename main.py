@@ -28,5 +28,8 @@ if data_file is not None:
     plt.xlabel(col)
     plt.ylabel('Quantity')
     st.pyplot(fig)
-st.header('Show correlation
+st.header('Show correlation between variables')
+fig, ax = plt.subplots()
+sns.heatmap(df.corr(method='pearson'), ax=ax, vamx=1, square=True, annot=True, cmap='Reds')
+st.write(fig)
     

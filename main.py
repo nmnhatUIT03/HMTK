@@ -3,7 +3,9 @@ import pandas as pd
 
 st.title('Data Visualization')
 
-data_file = st.file_uploader('Choose a csv file', type=(['.csv'])
+st.header('Upload data file')
+
+data_file = st.file_uploader('Choose a csv file', type=(['.csv']))
 
 if data_file is not None:
   df = pd.read_csv(data_file)

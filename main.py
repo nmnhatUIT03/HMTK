@@ -43,7 +43,7 @@ if data_file is not None:
       fig, ax = plt.subplots()
       ax.scatter(x=df[col], y=df[output])
       plt.xlabel(col)
-      plt.ylabel(num)
+      plt.ylabel(output)
       st.pyplot(fig)
       
     

@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import io
-
+import seaborn as sns
 import matplotlib.pyplot as plt
 
 st.title('Data Visualization')

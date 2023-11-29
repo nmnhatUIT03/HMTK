@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import IO
+import io
 
 st.title('Data Visualization')
 
